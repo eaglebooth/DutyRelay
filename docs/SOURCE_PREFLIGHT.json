@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-30T09:38:02.444659+00:00",
+  "scope": "Host-network GitHub API retrieval; not GenVM/validator retrieval",
+  "resources": [
+    {
+      "id": "GHSA-4xc9-8hmq-j652",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/security-advisories/GHSA-4xc9-8hmq-j652",
+      "semantic_sha256": "afffee4d0338198830577cab14dd7ae9cb59a258679c2774dee3c60d53c2e9c0",
+      "raw_sha256_observed": "9bff107b8efbcf046138b377ef8a51e43344769743ae8e579b5091f7d46d6f2e",
+      "semantic_revision_matches": true
+    },
+    {
+      "id": "GHSA-q26p-9cq4-7fc2",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/security-advisories/GHSA-q26p-9cq4-7fc2",
+      "semantic_sha256": "1ed0091b699d15fdbacbc3ce34e97230bbf4c78a9bd0f595eae25b602e9f5397",
+      "raw_sha256_observed": "c14462cd234b7973e905bf36ee0989bd3e5f728ab87afe0ed597c93144a1598e",
+      "semantic_revision_matches": true
+    }
+  ]
+}

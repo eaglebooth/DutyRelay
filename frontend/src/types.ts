@@ -1,0 +1,2 @@
+export type Workspace={id:string;title:string;actors:string[];scopes:string[];agreement_digest:string;state:string;incident_ids:string[]};
+export type Incident={id:string;workspace:string;advisory:string;status:string;effective_status:string;revision:number;attempts:number;assessment:null|{code:string;status:string;duties:{role:string;kind:string;quote:string}[]};tasks:{role:number;assignee:string;kind:string;state:string;predecessor:number;note:string}[];events:{sequence:number;actor:string;action:string;detail:string}[]};

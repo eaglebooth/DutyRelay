@@ -1,0 +1,107 @@
+{
+  "at": "2026-10-31T08:32:09.631Z",
+  "scope": "Real RPC browser readback, no wallet/signature/mock RPC",
+  "address": "0x215f35E477dcFb68De0E4de4C34CdA23233CbB19",
+  "workspace": "0xeb57bc7125fa60d7482ce12058397369ab3581f8:happy-primary",
+  "id": "0xeb57bc7125fa60d7482ce12058397369ab3581f8:happy-primary:GHSA-4xc9-8hmq-j652",
+  "canonical": {
+    "advisory": "GHSA-4xc9-8hmq-j652",
+    "agreement_digest": "c3c425f516e9b9715d59a52351d93c769112ab301fffc60e7847faf44e553948",
+    "assessment": {
+      "binding": "1eec6d1acf2057c48ada2b8935158590bc2c75b9a1793e0fdfb32448fe096d21",
+      "code": "OK",
+      "duties": [
+        {
+          "kind": "NODE_REVIEW",
+          "quote": "A vulnerable node can be made to consume very large amounts of memory when handling specially crafted p2p messages sent from an attacker node.",
+          "role": "0"
+        },
+        {
+          "kind": "NONE",
+          "quote": "",
+          "role": "1"
+        }
+      ],
+      "status": "RESOLVED"
+    },
+    "attempts": 1,
+    "duties": [
+      {
+        "kind": "NODE_REVIEW",
+        "quote": "A vulnerable node can be made to consume very large amounts of memory when handling specially crafted p2p messages sent from an attacker node.",
+        "role": "0"
+      },
+      {
+        "kind": "NONE",
+        "quote": "",
+        "role": "1"
+      }
+    ],
+    "effective_status": "ACKNOWLEDGED",
+    "events": [
+      {
+        "action": "OPEN",
+        "actor": "0xeb57bc7125fa60d7482ce12058397369ab3581f8",
+        "detail": "GHSA-4xc9-8hmq-j652",
+        "sequence": 1
+      },
+      {
+        "action": "ASSESS",
+        "actor": "0xeb57bc7125fa60d7482ce12058397369ab3581f8",
+        "detail": "DISPATCHED",
+        "sequence": 2
+      },
+      {
+        "action": "CLAIM",
+        "actor": "0xeb57bc7125fa60d7482ce12058397369ab3581f8",
+        "detail": "0",
+        "sequence": 3
+      },
+      {
+        "action": "HANDOVER",
+        "actor": "0xeb57bc7125fa60d7482ce12058397369ab3581f8",
+        "detail": "0",
+        "sequence": 4
+      },
+      {
+        "action": "ACCEPT",
+        "actor": "0x2da5393d7bbb9a037dc3abb56dbbc5c150fc843f",
+        "detail": "0",
+        "sequence": 5
+      }
+    ],
+    "id": "0xeb57bc7125fa60d7482ce12058397369ab3581f8:happy-primary:GHSA-4xc9-8hmq-j652",
+    "revision": 5,
+    "source_digest": "afffee4d0338198830577cab14dd7ae9cb59a258679c2774dee3c60d53c2e9c0",
+    "status": "ACKNOWLEDGED",
+    "tasks": [
+      {
+        "assignee": "0xeb57bc7125fa60d7482ce12058397369ab3581f8",
+        "kind": "NODE_REVIEW",
+        "note": "The operator has reviewed the historical advisory and hands over this declared operational responsibility. This is not evidence of a runtime patch.",
+        "predecessor": -1,
+        "role": 0,
+        "state": "ACCEPTED"
+      }
+    ],
+    "workspace": "0xeb57bc7125fa60d7482ce12058397369ab3581f8:happy-primary"
+  },
+  "observed": {
+    "title": "WORKSPACE / DutyRelay happy",
+    "incident": "GHSA-4xc9-8hmq-j652",
+    "state": "acknowledged",
+    "duties": [
+      "Coordinator · node review",
+      "Responder · none"
+    ],
+    "task_states": [
+      "accepted"
+    ],
+    "event_count": 5,
+    "wallet_connected": false,
+    "contract_input": "0x215f35E477dcFb68De0E4de4C34CdA23233CbB19"
+  },
+  "mobile_overflow": false,
+  "errors": [],
+  "url": "https://dutyrelay.vercel.app"
+}

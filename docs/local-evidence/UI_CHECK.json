@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-30T10:01:56.726Z",
+  "scope": "Built local browser UI only. No injected provider, signed transaction, mock RPC or GenVM proof.",
+  "observations": [
+    {
+      "width": 1440,
+      "view": "Responsibility desk",
+      "visible": true
+    },
+    {
+      "width": 1440,
+      "view": "Source register",
+      "visible": true
+    },
+    {
+      "width": 1440,
+      "view": "Advisory inbox",
+      "visible": true
+    },
+    {
+      "width": 390,
+      "view": "Responsibility desk",
+      "visible": true
+    },
+    {
+      "width": 390,
+      "view": "Source register",
+      "visible": true
+    },
+    {
+      "width": 390,
+      "view": "Advisory inbox",
+      "visible": true
+    }
+  ],
+  "logo": true,
+  "invalid_address_rejected": true,
+  "errors": []
+}

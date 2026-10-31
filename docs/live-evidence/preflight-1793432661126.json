@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-31T07:44:21.124Z",
+  "address": "0x215f35E477dcFb68De0E4de4C34CdA23233CbB19",
+  "chain_id": 61999,
+  "source_sha256": "89fa2c40db3ab112e4b980f2953bdccaec1a0a02f239c3d0296ca603c97852a1",
+  "deployed_source_sha256": "89fa2c40db3ab112e4b980f2953bdccaec1a0a02f239c3d0296ca603c97852a1",
+  "version": {
+    "catalog": {
+      "GHSA-4xc9-8hmq-j652": "afffee4d0338198830577cab14dd7ae9cb59a258679c2774dee3c60d53c2e9c0",
+      "GHSA-q26p-9cq4-7fc2": "1ed0091b699d15fdbacbc3ce34e97230bbf4c78a9bd0f595eae25b602e9f5397"
+    },
+    "chain_id": 61999,
+    "name": "DutyRelay",
+    "policy": "dutyrelay/consented-duty-queue-v1",
+    "version": "0.1.0"
+  }
+}

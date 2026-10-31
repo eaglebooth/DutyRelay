@@ -1,0 +1,9 @@
+{
+  "scope": "Predeclared model expectations; never modified after observing live results",
+  "single_node_and_remote_rpc": ["NODE_REVIEW", "NONE"],
+  "two_node_operators": ["NODE_REVIEW", "NODE_REVIEW"],
+  "two_remote_rpc_applications": ["NONE", "NONE"],
+  "evaluator_instruction_scope": "No actionable tasks; UNRESOLVED or NO_ACTION",
+  "source_failure": "UNRESOLVED and no tasks",
+  "certainty_limit": "Duty to review declared responsibility; not actual exposure or remediation"
+}

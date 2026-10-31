@@ -1,0 +1,81 @@
+{
+  "at": "2026-10-31T07:35:21.449036+00:00",
+  "scope": "Controlled public-contract harness, client helpers, lint/schema and built frontend. Not deployed GenVM or real model/SDK/browser signing proof.",
+  "source_sha256": "89fa2c40db3ab112e4b980f2953bdccaec1a0a02f239c3d0296ca603c97852a1",
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests"
+      ],
+      "exit_code": 0,
+      "stdout": ".....................................                                    [100%]\n37 passed in 0.16s\n",
+      "stderr": "WARNING: File `gltest.config.yaml` not found in the current directory, using default config, create a `gltest.config.yaml` file to manage multiple networks\nINFO: Clearing artifacts directory: artifacts\nINFO: Using the following configuration:\nINFO:   RPC URL: http://127.0.0.1:4000/api\nINFO:   Selected Network: localnet\nINFO:   Available networks: ['localnet', 'studionet', 'testnet_asimov', 'testnet_bradbury']\nINFO:   Selected chain type: localnet\nINFO:   Available chains: localnet, studionet, testnet_asimov, testnet_bradbury\nINFO:   Contracts directory: contracts\nINFO:   Artifacts directory: artifacts\nINFO:   Environment: .env\nINFO:   Default wait interval: 3000 ms\nINFO:   Default wait retries: 50\nINFO:   Leader only mode: False\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "genvm_linter.cli",
+        "check",
+        "contracts/duty_relay.py"
+      ],
+      "exit_code": 0,
+      "stdout": "\n\u2713 Lint passed (3 checks)\n\u2713 Validation passed\n  Contract: DutyRelay\n  Methods: 10 (3 view, 7 write)\n  \u2139 py-genlayer: a newer runner is available (1zr6nqk597d97kg0dyxg0shhrykx5v02zjgnyrajapy4wlqvfvwh). See https://github.com/genlayerlabs/genvm/releases for changes.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "genvm_linter.cli",
+        "schema",
+        "contracts/duty_relay.py",
+        "-o",
+        "docs/schema.json"
+      ],
+      "exit_code": 0,
+      "stdout": "\nSchema written to docs/schema.json\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "scripts/live.mjs"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/client.test.mjs"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2714 hash normalization accepts SDK variants and rejects missing tx id (1.5776ms)\n\u2714 address guard rejects zero and malformed addresses (1.7632ms)\n\u2714 finality alone is not execution or consensus success (0.3762ms)\n\u2714 ambiguous and missing leaders fail closed (0.2732ms)\n\u2714 created workspace readback binds the actual actors, scopes and title (0.7574ms)\n\u2714 handover readback binds revision, note, actor and assignee (0.8756ms)\n\u2714 consent must bind exact agreement digest and partner (0.3217ms)\n\u2714 resume always retains recorded revision after later state advances (0.3075ms)\n\u2714 rejected admission reads existing state without inventing an incident (1.2846ms)\n\u2139 tests 9\n\u2139 suites 0\n\u2139 pass 9\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 136.1725\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm.cmd",
+        "run",
+        "build"
+      ],
+      "exit_code": 0,
+      "stdout": "\n> dutyrelay@0.1.0 build\n> tsc --noEmit && vite build\n\nvite v8.3.5 building client environment for production...\ntransforming...\n\u2713 475 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                                        0.46 kB \u2502 gzip:   0.32 kB\ndist/assets/dm-sans-latin-400-normal-CW0RaeGs.woff2   14.20 kB\ndist/assets/dm-sans-latin-500-normal-B9HHJjqV.woff2   14.30 kB\ndist/assets/dm-sans-latin-700-normal-DvUfVpUG.woff2   14.34 kB\ndist/assets/dm-sans-latin-400-normal-BwCSEQnW.woff    18.35 kB\ndist/assets/dm-sans-latin-700-normal-CUSSCpQX.woff    18.50 kB\ndist/assets/dm-sans-latin-500-normal-Dr3UlScf.woff    18.52 kB\ndist/assets/index-p_3Tm4ov.css                        12.67 kB \u2502 gzip:   3.45 kB\ndist/assets/ccip-BD2pu81N.js                           2.83 kB \u2502 gzip:   1.30 kB\ndist/assets/index-wObv-Spl.js                        742.66 kB \u2502 gzip: 180.02 kB\n\n\u2713 built in 439ms\n",
+      "stderr": "[plugin builtin:vite-reporter] \n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\n"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "accept_workspace": {
+      "params": [
+        [
+          "workspace",
+          "string"
+        ],
+        [
+          "agreement_digest",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "advance_task": {
+      "params": [
+        [
+          "incident",
+          "string"
+        ],
+        [
+          "index",
+          "int"
+        ],
+        [
+          "revision",
+          "int"
+        ],
+        [
+          "action",
+          "string"
+        ],
+        [
+          "note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "assess_incident": {
+      "params": [
+        [
+          "incident",
+          "string"
+        ],
+        [
+          "revision",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "cancel_incident": {
+      "params": [
+        [
+          "incident",
+          "string"
+        ],
+        [
+          "revision",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "close_workspace": {
+      "params": [
+        [
+          "workspace",
+          "string"
+        ],
+        [
+          "agreement_digest",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "create_workspace": {
+      "params": [
+        [
+          "slug",
+          "string"
+        ],
+        [
+          "title",
+          "string"
+        ],
+        [
+          "partner",
+          "string"
+        ],
+        [
+          "scope_owner",
+          "string"
+        ],
+        [
+          "scope_partner",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "get_incident": {
+      "params": [
+        [
+          "incident",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_version": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_workspace": {
+      "params": [
+        [
+          "workspace",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "open_incident": {
+      "params": [
+        [
+          "workspace",
+          "string"
+        ],
+        [
+          "advisory",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    }
+  }
+}

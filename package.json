@@ -1,0 +1,28 @@
+{
+  "name": "dutyrelay",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "verify": "python scripts/verify.py",
+    "test:browser": "node scripts/check-ui.mjs",
+    "test:live": "node scripts/live.mjs"
+  },
+  "dependencies": {
+    "@fontsource/dm-sans": "5.3.0",
+    "@fontsource/libre-caslon-display": "5.3.0",
+    "genlayer-js": "1.1.8",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "puppeteer-core": "25.16.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
+  }
+}
